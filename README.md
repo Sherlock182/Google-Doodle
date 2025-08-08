@@ -12,11 +12,11 @@ This UserScript allows you to **replace the Google logo** with a custom image, b
    - [Tampermonkey](https://www.tampermonkey.net/)
    - [Violentmonkey](https://violentmonkey.github.io/)
 
-2. Download or copy the file `6ixicLbq.js` (or rename it, but keep the `.js` extension).
+2. Download or copy the file Google-Doodle.js` (or rename it, but keep the `.js` extension).
 
 3. Open your UserScript manager and **create a new script**.
 
-4. Paste the contents of the `6ixicLbq.js` file into the editor and save.
+4. Paste the contents of the Google-Doodle.js file into the editor and save.
 
 5. Visit [https://www.google.com](https://www.google.com).  
    You should now see the default Google logo replaced with your chosen image.
@@ -57,7 +57,7 @@ Este UserScript reemplaza el logo de Google por una **imagen personalizada**, ta
    - [Tampermonkey](https://www.tampermonkey.net/)
    - [Violentmonkey](https://violentmonkey.github.io/)
 
-2. Descarga o copia el archivo `6ixicLbq.js` (o el nombre que elijas, terminando en `.js`).
+2. Descarga o copia el archivo Google-Doodle.js (o el nombre que elijas, terminando en `.js`).
 
 3. Abre el gestor de UserScripts y **crea un nuevo script**.
 
@@ -84,18 +84,6 @@ Este UserScript reemplaza el logo de Google por una **imagen personalizada**, ta
   ```
 
 - Guarda y recarga Google para ver tu nuevo logo.
-
----
-
-## 🔍 Preview / Vista previa
-
-### 🇬🇧 English – Homepage view:
-
-![Homepage with Custom Logo](./homepage_preview.jpg)
-
-### 🇪🇸 Español – Resultados de búsqueda:
-
-![Search Results with Custom Logo](./search_preview.jpg)
 
 ---
 
