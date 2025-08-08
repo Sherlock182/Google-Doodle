@@ -87,6 +87,18 @@ Este UserScript reemplaza el logo de Google por una **imagen personalizada**, ta
 
 ---
 
+## 🔍 Preview / Vista previa
+
+### 🇬🇧 English – Homepage view:
+
+![Homepage with Custom Logo](./homepage_preview.jpg)
+
+### 🇪🇸 Español – Resultados de búsqueda:
+
+![Search Results with Custom Logo](./search_preview.jpg)
+
+---
+
 ## ✅ License
 
 This project is shared for educational and personal customization purposes.  
