@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Nueva pestaña</title>
+<style>
+  :root { color-scheme: light dark; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: #fff;
+    font-family: arial, sans-serif;
+    display: flex; flex-direction: column; align-items: center;
+    padding-top: 20vh; box-sizing: border-box;
+  }
+  #logo { width: 380px; max-width: 82vw; height: auto; display: block; margin-bottom: 34px; user-select: none; }
+  form { width: min(584px, 90vw); }
+  .box {
+    display: flex; align-items: center; gap: 12px;
+    height: 46px; padding: 0 16px;
+    border: 1px solid #dfe1e5; border-radius: 24px; background: #fff;
+  }
+  .box:hover, .box:focus-within { box-shadow: 0 1px 6px rgba(32,33,36,.28); border-color: rgba(223,225,229,0); }
+  .box svg { width: 20px; height: 20px; fill: #9aa0a6; flex: none; }
+  input { flex: 1; border: none; outline: none; background: transparent; font-size: 16px; color: #202124; }
+  .btns { display: flex; justify-content: center; gap: 12px; margin-top: 28px; }
+  .btns button {
+    background: #f8f9fa; border: 1px solid #f8f9fa; border-radius: 4px;
+    color: #3c4043; font-size: 14px; padding: 0 16px; height: 36px; cursor: pointer;
+  }
+  .btns button:hover { border-color: #dadce0; box-shadow: 0 1px 1px rgba(0,0,0,.1); }
+  @media (prefers-color-scheme: dark) {
+    body { background: #202124; }
+    .box { background: #303134; border-color: #5f6368; }
+    input { color: #e8eaed; }
+    .btns button { background: #303134; border-color: #303134; color: #e8eaed; }
+  }
+</style>
+</head>
+<body>
+  <img id="logo" src="logo.svg" alt="Google Doodle">
+  <form id="f" action="https://www.google.com/search" method="GET">
+    <div class="box">
+      <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+      <input type="text" name="q" id="q" autocomplete="off" autofocus aria-label="Buscar">
+    </div>
+    <div class="btns">
+      <button type="submit">Buscar con Google</button>
+      <button type="button" id="lucky">Voy a tener suerte</button>
+    </div>
+  </form>
+  <script src="settings-panel.js"></script>
+  <script src="newtab.js"></script>
+</body>
+</html>

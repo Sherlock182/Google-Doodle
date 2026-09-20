@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 230" width="660" height="230" role="img" aria-label="Buscador Montalvo">
+
+  <style>
+    .ink { fill: #0F172A; }
+    .acc { fill: #16A34A; }
+    .mut { fill: #64748B; }
+    .bone{ fill: #334155; }
+    text { font-family: ui-monospace, "DejaVu Sans Mono", "SF Mono", Consolas, monospace; }
+    @media (prefers-color-scheme: dark) {
+      .ink { fill: #E8EDF2; } .acc { fill: #22E07A; }
+      .mut { fill: #94A3B8; } .bone{ fill: #7C8DA6; }
+    }
+  </style>
+  <defs>
+    <mask id="cut" maskUnits="userSpaceOnUse" x="-160" y="-160" width="320" height="320">
+      <rect x="-160" y="-160" width="320" height="320" fill="#fff"/>
+      <path d="M -46,-38 L -13,-27 L -10,-7 L -24,4 L -43,-4 Z" fill="#000"/>
+      <path d="M 46,-38 L 13,-27 L 10,-7 L 24,4 L 43,-4 Z" fill="#000"/>
+      <path d="M 0,-6 L 13,17 L 0,11 L -13,17 Z" fill="#000"/>
+      <rect x="-27" y="38" width="54" height="27" rx="5" fill="#000"/>
+      <rect x="-26.5" y="38" width="6" height="27" fill="#fff"/>
+      <rect x="-15.5" y="38" width="6" height="27" fill="#fff"/>
+      <rect x="-4.5"  y="38" width="6" height="27" fill="#fff"/>
+      <rect x="6.5"   y="38" width="6" height="27" fill="#fff"/>
+      <rect x="17.5"  y="38" width="6" height="27" fill="#fff"/>
+    </mask>
+    <g id="bone">
+      <rect x="-112" y="-9.5" width="224" height="19" rx="9.5"/>
+      <circle cx="-113" cy="-11" r="11.5"/><circle cx="-113" cy="11" r="11.5"/>
+      <circle cx="113" cy="-11" r="11.5"/><circle cx="113" cy="11" r="11.5"/>
+    </g>
+</defs>
+
+  <g transform="translate(122,115) scale(0.7)" mask="url(#cut)">
+    <g class="acc">
+      <use href="#bone" transform="rotate(40)"/>
+      <use href="#bone" transform="rotate(-40)"/>
+    </g>
+    <path class="ink" d="M 0,-78 C 32,-78 57,-53 57,-19 C 57,-2 53,10 45,20 C 39,27 37,31 37,40 C 37,58 27,70 13,70 L -13,70 C -27,70 -37,58 -37,40 C -37,31 -39,27 -45,20 C -53,10 -57,-2 -57,-19 C -57,-53 -32,-78 0,-78 Z"/>
+  </g>
+  <text class="mut" x="243" y="90"  font-size="29" letter-spacing="22">BUSCADOR</text>
+  <text class="ink" x="242" y="164" font-size="62" font-weight="700" letter-spacing="1">MONTALVO<tspan class="acc">_</tspan></text>
+</svg>

@@ -1,0 +1,86 @@
+{
+  "manifest_version": 3,
+  "name": "Google Doodle",
+  "version": "1.9",
+  "description": "Personaliza Google: sube tus propios logos, elige el color de fondo y el tamano desde un icono de ajustes discreto.",
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.google.com/*",
+        "https://www.google.com.sv/*",
+        "https://www.google.com.mx/*",
+        "https://www.google.com.ar/*",
+        "https://www.google.com.co/*",
+        "https://www.google.es/*",
+        "https://www.google.cl/*",
+        "https://www.google.com.pe/*",
+        "https://www.google.com.gt/*",
+        "https://www.google.hn/*",
+        "https://www.google.com.ni/*",
+        "https://www.google.co.cr/*",
+        "https://www.google.com.pa/*",
+        "https://www.google.com.do/*",
+        "https://www.google.com.ec/*",
+        "https://www.google.com.bo/*",
+        "https://www.google.com.uy/*",
+        "https://www.google.com.py/*",
+        "https://www.google.com.ve/*",
+        "https://www.google.com.br/*",
+        "https://www.google.co.uk/*",
+        "https://www.google.fr/*",
+        "https://www.google.de/*",
+        "https://www.google.it/*",
+        "https://www.google.ca/*"
+      ],
+      "js": [
+        "settings-panel.js",
+        "google-logo.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["logo.svg", "logo-compact.svg"],
+      "matches": [
+        "https://www.google.com/*",
+        "https://www.google.com.sv/*",
+        "https://www.google.com.mx/*",
+        "https://www.google.com.ar/*",
+        "https://www.google.com.co/*",
+        "https://www.google.es/*",
+        "https://www.google.cl/*",
+        "https://www.google.com.pe/*",
+        "https://www.google.com.gt/*",
+        "https://www.google.hn/*",
+        "https://www.google.com.ni/*",
+        "https://www.google.co.cr/*",
+        "https://www.google.com.pa/*",
+        "https://www.google.com.do/*",
+        "https://www.google.com.ec/*",
+        "https://www.google.com.bo/*",
+        "https://www.google.com.uy/*",
+        "https://www.google.com.py/*",
+        "https://www.google.com.ve/*",
+        "https://www.google.com.br/*",
+        "https://www.google.co.uk/*",
+        "https://www.google.fr/*",
+        "https://www.google.de/*",
+        "https://www.google.it/*",
+        "https://www.google.ca/*"
+      ]
+    }
+  ]
+}

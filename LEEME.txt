@@ -1,0 +1,56 @@
+GOOGLE DOODLE  (v1.9)
+=====================
+
+Extension de Chrome que reemplaza el logo de Google por el tuyo, con
+un icono de ajustes (engranaje) para personalizarlo sin tocar codigo.
+
+INSTALAR
+  1. Abre chrome://extensions
+  2. Activa "Modo de desarrollador" (arriba a la derecha)
+  3. Si ya tenias una version anterior cargada, quitala primero
+  4. Clic en "Cargar descomprimida" y elige ESTA carpeta
+  5. Abre una pestaña nueva -> "Conservar cambios"
+  6. Entra a google.com y haz Ctrl + F5
+
+  IMPORTANTE: no muevas ni borres esta carpeta, Chrome la carga desde aqui.
+
+QUE HACE
+  - Pestaña nueva: buscador propio con tu logo
+  - google.com (portada y doodles): logo completo
+  - Pagina de resultados: logo compacto en la cabecera
+  - Icono de ajustes (esquina inferior derecha, discreto): abre un panel
+    para activar modo oscuro, cambiar el color de fondo, subir tus 2
+    logos (completo y compacto) y ajustar el tamaño, todo en vivo y
+    sin recargar.
+
+PERSONALIZAR (sin editar nada)
+  1. En google.com o en la pestaña nueva, haz clic en el engranaje.
+  2. Activa "Modo oscuro de la pagina" si quieres un fondo oscuro fijo
+     (esto desactiva el selector de color mientras esta activo).
+  3. Sube tu logo completo (para la portada) y tu logo compacto (para
+     la cabecera de resultados). Acepta PNG, JPG o SVG.
+  4. Si no usas modo oscuro, elige el color de fondo que prefieras.
+  5. Ajusta el tamaño con el control deslizante.
+  6. Clic en "Guardar". Los cambios se guardan en este navegador
+     (chrome.storage) y se aplican de inmediato en todas las paginas.
+  7. "Restablecer todo" vuelve a modo oscuro apagado, color por
+     defecto, logos por defecto y tamaño por defecto.
+
+  Los ajustes son por navegador/perfil, no viajan con la carpeta: si
+  compartes esta extension con otra persona, cada quien sube sus
+  propios logos desde el engranaje, sin editar ningun archivo.
+
+ARCHIVOS
+  manifest.json ............ configuracion de la extension
+  newtab.html / newtab.js .. la pestaña nueva
+  google-logo.js ........... reemplaza el logo dentro de google.com
+  settings-panel.js ........ icono de ajustes + panel (compartido)
+  logo.svg / logo-compact.svg ... logos por defecto (se usan hasta que
+                                   subas los tuyos desde el engranaje)
+  icons/ ................... iconos de la extension (16/48/128)
+
+SI NO APARECE EL LOGO EN GOOGLE
+  - Verifica que en chrome://extensions la extension este activada
+  - Ctrl + F5 en la pagina de Google
+  - Si usas un dominio raro (google.cat, google.co.jp...), avisame y lo agrego
+    a la lista de "matches" del manifest.json
